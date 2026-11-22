@@ -1,40 +1,11 @@
-# AI Interactions Log
+# AI interactions log
 
-> **Stretch features only.** Only fill in the sections that apply to stretch features you attempted. If you did not attempt a stretch feature, leave its section blank or delete it. This file is not required for the core project.
+## Agent workflow
 
----
+**Request:** Build the PawPal+ exercise using the linked CodePath starter and phase instructions, and identify what the owner of the fork needs to do.
 
-## Agent Workflow (SF7)
+**Actions:** The assistant inspected the starter's README, UI, reflection template and diagram; drafted the four-class design; implemented and ran the CLI before wiring the interface; added scheduling rules and ran automated tests. It also kept the draft diagram and recorded the final model separately.
 
-> Document your experience using an AI agent (e.g., Cursor Agent, Claude, Copilot) to make multi-step changes autonomously.
+**Design alternative reviewed:** A plan could automatically shift a lower-priority task after a collision. This implementation keeps the owner's entered times and explains what cannot fit instead. Tests cover equal starts, partial overlaps, and back-to-back tasks.
 
-**What task did you give the agent?**
-
-<!-- Describe the goal you asked the agent to accomplish -->
-
-**What did the agent do?**
-
-<!-- List the steps the agent took (files edited, commands run, etc.) -->
-
-**What did you have to verify or fix manually?**
-
-<!-- Describe anything the agent got wrong or that required human review -->
-
----
-
-## Prompt Comparison (SF11)
-
-> Compare two different prompts (or two different models) on the same task.
-
-| | Option A | Option B |
-|-|----------|----------|
-| **Model / tool used** | | |
-| **Prompt** | | |
-| **Response summary** | | |
-| **What was useful** | | |
-| **Problems noticed** | | |
-| **Decision** | | |
-
-**Which approach did you use in your final implementation and why?**
-
-<!-- Your conclusion -->
+**Verification boundary:** The CLI, backend tests and form-handler test ran in the build environment. The native Streamlit smoke test needs the Streamlit package and was not run there. A human review of the browser interface and personal reflection remains separate. No separate VS Code chat transcripts or manual student test runs are claimed.

@@ -1,5 +1,7 @@
-from datetime import datetime
-from pawpal_system import Pet, Task
+from datetime import date, datetime, timedelta
+
+import pytest
+from pawpal_system import Owner, Pet, Scheduler, Task
 
 
 def test_mark_complete_changes_status():
@@ -16,10 +18,6 @@ def test_add_task_increases_only_its_pets_count():
     assert dog.tasks == [task]
     assert cat.tasks == []
 
-
-from datetime import date, timedelta
-import pytest
-from pawpal_system import Owner, Scheduler
 
 DAY = date(2026, 12, 31)
 
